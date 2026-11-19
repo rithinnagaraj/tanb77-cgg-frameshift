@@ -1,0 +1,101 @@
+ko	gene	group	note
+K06215	pdxS	PLP	PLP synthase
+K08681	pdxT	PLP	PLP synthase glutaminase
+K00097	pdxA	PLP	DXP-dependent pathway
+K03474	pdxJ	PLP	DXP-dependent pathway
+K03473	pdxB	PLP	DXP-dependent pathway
+K00275	pdxH	PLP	PNP/PMP oxidase
+K00868	pdxK	PLP	pyridoxine kinase
+K06997	yggS	PLP	PLP homeostasis protein
+K18608	ppaT	PLP	B6 degradation
+K18609	pldh	PLP	B6 degradation
+K01012	bioB	BIOTIN	biotin synthase
+K00652	bioF	BIOTIN	KAPA synthase
+K00833	bioA	BIOTIN	DAPA aminotransferase
+K01935	bioD	BIOTIN	dethiobiotin synthetase
+K01906	bioW	BIOTIN	pimeloyl-CoA synthetase
+K02169	bioC	BIOTIN	malonyl-ACP methyltransferase
+K02170	bioH	BIOTIN	pimeloyl-ACP methylesterase
+K16593	bioI	BIOTIN	P450 BioI
+K03523	bioY	BIOTIN	ECF biotin transporter S unit
+K16783	bioN	BIOTIN	biotin transporter permease
+K16784	bioM	BIOTIN	biotin transporter ATPase
+K00606	panB	COA	ketopantoate hydroxymethyltransferase
+K00077	panE	COA	ketopantoate reductase
+K01918	panC	COA	pantothenate synthetase
+K01579	panD	COA	aspartate decarboxylase
+K09722	ppbl	COA	archaeal phosphopantoate-bAla ligase
+K06982	pok	COA	archaeal pantoate kinase
+K13038	coaBC	COA	PPC decarboxylase/ligase
+K00867	coaA	COA	PanK type I
+K09680	coaW	COA	PanK type II
+K03525	coaX	COA	PanK type III
+K00954	coaD	COA	PPAT
+K00859	coaE	COA	dephospho-CoA kinase
+K14392	panF	COA	Na/pantothenate symporter
+K02492	hemA	HEME	glutamyl-tRNA reductase
+K01845	hemL	HEME	GSA aminomutase
+K01698	hemB	HEME	ALA dehydratase
+K01749	hemC	HEME	PBG deaminase
+K01719	hemD	HEME	uroporphyrinogen III synthase
+K01599	hemE	HEME	UroD
+K02495	hemN	HEME	O2-independent CPO
+K00228	hemF	HEME	CPO
+K00231	hemY	HEME	PPO
+K00230	hemG	HEME	PPO menaquinone
+K08973	hemJ	HEME	PPO HemJ
+K01772	hemH	HEME	ferrochelatase
+K00435	chdC	HEME	coproheme decarboxylase
+K22225	ahbAB	HEME	siroheme decarboxylase
+K22227	ahbD	HEME	AdoMet heme synthase
+K09813	hrtB	HEME	heme efflux permease
+K09814	hrtA	HEME	heme efflux ATPase
+K07145	isdG	HEME	heme oxygenase
+K07225	hmuS	HEME	heme degradation/transport
+K25288	fhuB	HEME	heme/hydroxamate permease
+K03644	lipA	LIPOATE	lipoyl synthase
+K03801	lipB	LIPOATE	octanoyltransferase
+K03800	lplA	LIPOATE	lipoate-protein ligase
+K16869	lipL	LIPOATE	GcvH:protein lipoyltransferase
+K23734	lipM	LIPOATE	octanoyltransferase LipM
+K03179	ubiA	QUINONE	4-HB octaprenyltransferase
+K03181	ubiC	QUINONE	chorismate lyase
+K03182	ubiD	QUINONE	decarboxylase
+K03186	ubiX	QUINONE	flavin prenyltransferase
+K03183	ubiE	QUINONE	C-methyltransferase
+K00568	ubiG	QUINONE	O-methyltransferase
+K03688	ubiB	QUINONE	kinase
+K03185	ubiH	QUINONE	hydroxylase
+K02552	menF	QUINONE	isochorismate synthase
+K02551	menD	QUINONE	SEPHCHC synthase
+K08680	menH	QUINONE	SHCHC synthase
+K02549	menC	QUINONE	OSB synthase
+K01911	menE	QUINONE	OSB-CoA ligase
+K01661	menB	QUINONE	DHNA-CoA synthase
+K02548	menA	QUINONE	DHNA prenyltransferase
+K11782	mqnA	QUINONE	futalosine pathway
+K11784	mqnC	QUINONE	futalosine pathway
+K11785	mqnD	QUINONE	futalosine pathway
+K18285	mqnE	QUINONE	futalosine pathway
+K03147	thiC	POS_TPP	TPP riboswitch
+K00878	thiM	POS_TPP	TPP riboswitch
+K02858	ribB	POS_FMN	FMN riboswitch
+K14652	ribBA	POS_FMN	FMN riboswitch
+K16092	btuB	POS_COBALAMIN	AdoCbl riboswitch
+K02232	cobQ	POS_COBALAMIN	AdoCbl riboswitch
+K03517	nadA	POS_NAD	NAD+ riboswitch (rare)
+K03639	moaA	POS_MOCO	Moco RNA
+K00789	metK	POS_SAM	SAM riboswitches
+K00928	lysC	POS_LYS	lysine riboswitch
+K00605	gcvT	POS_GLY	glycine riboswitch
+K06199	crcB	POS_FLUORIDE	fluoride riboswitch
+K06920	queC	POS_PREQ1	preQ1 riboswitch
+K06213	mgtE	POS_MG	M-box
+K00820	glmS	POS_GLMS	glmS ribozyme
+K03816	xpt	POS_PURINE	guanine riboswitch
+K03313	nhaA	POS_LI	Li+ riboswitch (rare)
+K02007	cbiM	POS_NICO	NiCo riboswitch (rare)
+K11741	sugE	POS_GUANIDINE	guanidine-I/II/III
+K00602	purH	POS_ZTP	ZTP riboswitch
+K01251	ahcY	POS_SAH	SAH riboswitch
+K00941	thiD	POS_HMPPP	HMP-PP riboswitch (rare)

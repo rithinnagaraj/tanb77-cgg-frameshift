@@ -1,0 +1,6 @@
+data_lit/
+report/preview/
+__pycache__/
+*.pyc
+*.zip
+.claude/

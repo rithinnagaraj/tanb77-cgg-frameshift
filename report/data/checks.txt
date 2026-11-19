@@ -1,0 +1,40 @@
+== 1. Calibrated null: rare (usage<5/10k, >=30 cols) family x codon combos: 816
+                         family codon std    n     usage  frac_std top_alt  frac_alt
+596           f__Reyranellaceae   ATA   I  133  4.909543  0.037594       L  0.917293
+95                   f__CAG-508   CGG   R  391  1.718464  0.120205       G  0.849105
+18       f__Absconditicoccaceae   CGG   R   69  4.122849  0.014493       W  0.797101
+416  f__Methanomethylophilaceae   AGT   S   43  3.758906  0.000000       G  0.744186
+157        f__Chamaesiphonaceae   ATA   I   39  4.444293  0.102564       L  0.743590
+314           f__Haloarculaceae   AGT   S   72  4.761432  0.125000       G  0.736111
+76          f__Brevibacillaceae   ATA   I   62  4.268238  0.193548       L  0.725806
+333        f__Hyphomicrobiaceae   ATA   I  306  4.292755  0.179739       L  0.725490
+393          f__LZORAL124-64-63   ATA   I   39  2.634263  0.205128       L  0.717949
+629                   f__SM1A02   ATA   I  158  2.731419  0.196203       L  0.689873
+481       f__Nanoperiomorbaceae   ATA   I  108  4.676762  0.148148       L  0.685185
+158       f__Chitinibacteraceae   ATA   I   41  2.458682  0.341463       L  0.658537
+combos (excluding CAG-508) with frac_alt >= 0.5: 69 of 812 ; max frac_alt = 0.917
+empirical P(frac_alt >= CAG-508 value) = 0.00123
+
+== 2. Rate of X-at-Gly-consensus columns per source codon (events / source-codon columns)
+CAG-508 CGG@G/GGG=332/26696=1.24e-02 | CGA@G/GGA=3/391676=7.66e-06 | CGT@G/GGT=13/213996=6.07e-05 | CGC@G/GGC=2/29829=6.70e-05
+other TANB77 CGG@G/GGG=8/3068=2.61e-03 | CGA@G/GGA=1/35544=2.81e-05 | CGT@G/GGT=3/35904=8.36e-05 | CGC@G/GGC=0/5955=0.00e+00
+Oscillospirales CGG@G/GGG=603/350931=1.72e-03 | CGA@G/GGA=78/686779=1.14e-04 | CGT@G/GGT=2731/1128855=2.42e-03 | CGC@G/GGC=2699/2440401=1.11e-03
+Lachnospirales CGG@G/GGG=84/318116=2.64e-04 | CGA@G/GGA=33/1134421=2.91e-05 | CGT@G/GGT=90/1163786=7.73e-05 | CGC@G/GGC=115/1006592=1.14e-04
+Christensenellales CGG@G/GGG=373/183527=2.03e-03 | CGA@G/GGA=62/293354=2.11e-04 | CGT@G/GGT=278/413234=6.73e-04 | CGC@G/GGC=662/962614=6.88e-04
+CAG-508 rate ratio CGG@G per GGG vs CGH@G per GGH: 439.1x (binomial p=0.00e+00); k1=332, n1=26696, k0=18, n0=635501
+
+== 3. Posterior margins (pooled)
+f__CAG-508 genomes 830 cols 391 [('G', '1'), ('*', '2.16e-86'), ('S', '9.25e-107'), ('A', '4.54e-119')] logL(G)-logL(A)= 272.5
+g__RGIG3102 genomes 22 cols 31 [('R', '1'), ('K', '4.62e-16'), ('Q', '3.2e-19'), ('*', '1.05e-19')] logL(G)-logL(A)= -55.4
+g__Peptacetobacter genomes 5 cols 0 [('A', '0.0476'), ('C', '0.0476'), ('D', '0.0476'), ('E', '0.0476')] logL(G)-logL(A)= 0.0
+g__Onthovivens genomes 52 cols 23 [('W', '1'), ('Y', '1.7e-32'), ('F', '2.05e-33'), ('*', '1.44e-34')] logL(G)-logL(A)= -37.7
+
+== 4. Pseudo-replication
+one-genome-per-genus rep0: genomes=44 cols=23 P(G)=1.0000 Gcons=20 Rcons=2
+one-genome-per-genus rep1: genomes=44 cols=25 P(G)=1.0000 Gcons=23 Rcons=1
+one-genome-per-genus rep2: genomes=44 cols=24 P(G)=1.0000 Gcons=21 Rcons=3
+one-genome-per-genus rep3: genomes=44 cols=25 P(G)=1.0000 Gcons=21 Rcons=3
+one-genome-per-genus rep4: genomes=44 cols=23 P(G)=1.0000 Gcons=20 Rcons=3
+leave-out CAG-269: genomes=508 cols=254 P(G)=1.000000 Gcons=216 Rcons=33
+distinct (marker,column) sites, native copies: 281 from 979 occurrences; distinct sites with ref-majority Gly: 157 Arg: 10
+native sites, ref-majority residue (top 6): {'G': 691, 'N': 44, 'K': 43, 'E': 42, 'Q': 40, 'S': 34}
