@@ -25,7 +25,7 @@ phenomenon coincides with two changes in the tRNA set: the loss of every CGG-rea
 the gain of a single-copy **tRNA-Gly(UCC) variant with G37**. Automated genetic-code inference tools report these sites
 as a spurious "CGG→Gly reassignment", and standard gene annotations truncate many TANB77 genes at CGG.
 
-- **Executive summary (PDF):** [`report/executive_summary.pdf`](report/executive_summary.pdf) — *the version currently in the repo predates the prior-report correction; a corrected PDF is being regenerated. The README and full report are authoritative.*
+- **Executive summary (PDF):** [`report/executive_summary.pdf`](report/executive_summary.pdf)
 - **Full report:** [`report/full_report.md`](report/full_report.md)
 - **Project history:** [`plan.md`](plan.md) has the original riboswitch plan and the pivot;
   [`results_interim.md`](results_interim.md) has the interim results, including the retracted "CGG→Gly" interpretation.
