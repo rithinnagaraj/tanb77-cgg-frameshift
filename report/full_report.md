@@ -1,4 +1,4 @@
-# A conserved CGG-triggered +1 frameshift code in the gut bacterial order TANB77
+# A conserved CGG-triggered +1 frameshift code in the gut bacterial order TANB77 (independent confirmation of a prior report)
 
 *Full report accompanying `executive_summary.pdf`. 2026-11-20. Repository: https://github.com/rithinnagaraj/tanb77-cgg-frameshift (code in `code/`).*
 
@@ -49,8 +49,24 @@
 - **C5. Annotations truncate genes, and code-inference tools report a frameshift shadow as "CGG→Gly".** High.
 - **C6. A minority of CGGs are read in frame** (for example purB). Moderate.
 
-## 4. Novelty
+## 4. Novelty (corrected 2026-11-20)
 
+- **PRIOR REPORT: the core finding is not first.** On 16 Nov 2026, Ryan (@small_LM,
+  https://x.com/small_LM/status/2122396301539115056) publicly reported genome-wide +1 frameshifting at CGG in TANB77.
+  The post covers:
+  - the skip in 54 of 64 genera, all of which lost the CGG tRNA;
+  - Gly at 1,237 of 1,458 skip sites;
+  - 59% of +1 frameshifts falling at CGG;
+  - phages that skip too;
+  - DNA and RNA reads that retain the C.
+
+  Our analysis was independent: it started 19 Nov, and we learned of the post on 20 Nov. Our novelty checks covered
+  papers, preprints and datasets, but not social media.
+- **What remains possibly new here:**
+  1. The co-occurring single-copy tRNA-Gly(UCC) G37 variant (a candidate C-GGA reader).
+  2. The RGIG9151 outgroup, which keeps the CGG reader and does not shift.
+  3. Evidence that automated code-inference "CGG→Gly" calls (KACI, Codetta-like) are a frameshift artefact.
+  4. Independent replication in 23 complete long-read genomes.
 - **Literature and data checks** are as in the PDF, §3.
 - **Prior art that narrows the claim:**
   - Isolated +1 shifting at rare or uncharged codons: E. coli CGG-C/AGG-AGG (Spanjaard & van Duin 1988; FSscan).
@@ -58,8 +74,7 @@
   - Yeast near-cognate codons (Sundararajan 1999).
   - Eukaryotic frameshift codes (Euplotes; Perkinsus mitochondria).
   - The KACI table contains undescribed "CGG=G" calls for CAG-508.
-- **What is new:** a clade-wide, conserved, tRNA-linked frameshift code in bacteria. It co-occurs with a dedicated
-  tRNA-Gly variant, and it explains a class of spurious code-inference calls.
+- **Contribution relative to the prior report:** independent confirmation, plus items 1–4 above.
 
 ## 5. Open items and next steps
 

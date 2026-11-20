@@ -1,6 +1,23 @@
-# A conserved CGG-triggered +1 frameshift code in the gut bacterial order TANB77
+# CGG-triggered +1 frameshifting in the gut bacterial order TANB77: independent confirmation and additions
 
-This is a computational discovery made from public genomes (GTDB r226, 143,614 species).
+This is a computational analysis of public genomes (GTDB r226, 143,614 species).
+
+> **Prior report — this is not a first discovery.** The core phenomenon was posted publicly first, on
+> **16 Nov 2026**, by Ryan ([@small_LM on X](https://x.com/small_LM/status/2122396301539115056)): "the first known
+> case of genome-wide frameshifting in bacteria … a whole order of gut bacteria skips a letter of its genes at CGG".
+> That post includes read-level DNA and RNA support and phage data. Our analysis (started 19 Nov 2026) was
+> independent and only learned of the post afterwards.
+>
+> **What this repository adds** to that report:
+> 1. **Replication by a different route.** We used a genetic-code screen, a genome frame test, and 23 complete
+>    long-read genomes from 6 BioProjects.
+> 2. **A candidate mechanism.** A single-copy tRNA-Gly(UCC) variant with G37 is present in all 23 complete CAG-508
+>    genomes and in 0/300 other Clostridia.
+> 3. **An outgroup control.** The TANB77 family RGIG9151 keeps its CGG-reading tRNA and does not shift.
+> 4. **A correction to automated code-inference tools.** Their "CGG→Gly" calls for these genomes, including 863
+>    KACI calls, are a frameshift artefact.
+>
+> Items 2–4 are, to our knowledge, not in the prior report.
 
 In the human/animal gut family **CAG-508** (order **TANB77**, Clostridia), the arginine codon **CGG** acts as a
 conserved **+1 frameshift site**. The C is skipped, and the following GGA/GGU encodes Gly in the +1 frame. The
@@ -8,7 +25,7 @@ phenomenon coincides with two changes in the tRNA set: the loss of every CGG-rea
 the gain of a single-copy **tRNA-Gly(UCC) variant with G37**. Automated genetic-code inference tools report these sites
 as a spurious "CGG→Gly reassignment", and standard gene annotations truncate many TANB77 genes at CGG.
 
-- **Executive summary (PDF):** [`report/executive_summary.pdf`](report/executive_summary.pdf)
+- **Executive summary (PDF):** [`report/executive_summary.pdf`](report/executive_summary.pdf) — *the version currently in the repo predates the prior-report correction; a corrected PDF is being regenerated. The README and full report are authoritative.*
 - **Full report:** [`report/full_report.md`](report/full_report.md)
 - **Project history:** [`plan.md`](plan.md) has the original riboswitch plan and the pivot;
   [`results_interim.md`](results_interim.md) has the interim results, including the retracted "CGG→Gly" interpretation.

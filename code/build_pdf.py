@@ -41,9 +41,13 @@ def fig(path, w_cm, cap):
     return KeepTogether([Image(path, width=w_cm * cm, height=w_cm * cm * r), P(cap, 'cap')])
 F = 'figs/'
 st = []
-st += [P('A conserved CGG-triggered +1 frameshift code in the gut bacterial order TANB77, coinciding with loss of every CGG-reading tRNA and gain of a tRNA<super>Gly</super> variant', 'title'),
-       P('Executive summary · computational discovery from public genomes (GTDB r226; 143,614 species) · 20 Nov 2026 · '
-         'Full report and code: <font name="DVM">github.com/rithinnagaraj/tanb77-cgg-frameshift</font>', 'sub')]
+st += [P('CGG-triggered +1 frameshifting in the gut bacterial order TANB77: independent confirmation, a candidate tRNA<super>Gly</super> mechanism, and a correction to code-inference tools', 'title'),
+       P('Executive summary · computational analysis of public genomes (GTDB r226; 143,614 species) · 20 Nov 2026 (corrected) · '
+         'Full report and code: <font name="DVM">github.com/rithinnagaraj/tanb77-cgg-frameshift</font>', 'sub'),
+       P('<b>Prior report — not a first discovery.</b> The core phenomenon (TANB77 skips a C at CGG genome-wide) was first reported publicly on 16 Nov 2026 by '
+         'Ryan (@small_LM, x.com/small_LM/status/2122396301539115056). That report includes read-level DNA/RNA support and phage data. '
+         'Our analysis began independently on 19 Nov; we learned of the post on 20 Nov. Our searches had covered papers, preprints and datasets but not social media. '
+         'Possibly new here: the tRNA<super>Gly</super>(UCC) G37 variant, the RGIG9151 outgroup control, the explanation of spurious "CGG→Gly" calls, and the long-read replication.', 'b')]
 st += [P('1. Summary', 'h'),
        P('We screened all 143,614 GTDB r226 bacterial and archaeal species for non-standard genetic codes. The screen recovered every known bacterial code '
          'and found one new anomaly: in the human/animal gut family <b>CAG-508</b> (order <b>TANB77</b>, Clostridia; 830 species; '
@@ -58,7 +62,7 @@ st += [P('1. Summary', 'h'),
          '65–96% of TANB77 MAGs, and 0 of 305 control genomes. '
          'Automated code-inference tools mistake these sites for a "CGG→Gly" reassignment (Melnykov\'s public KACI table holds 863 such undescribed calls). '
          'Standard gene annotations of TANB77 are systematically truncated at CGG. '
-         'To our knowledge this is the first clade-wide, tRNA-linked use of a sense codon as a conserved frameshift signal in a prokaryote.'),
+         'This independently confirms the prior report (above) and adds the tRNA, outgroup and tool-artefact results.'),
        fig(F + 'fig0_model.png', 15.5, '<b>Figure 1. Model.</b> Prodigal/GTDB read CGG in frame (orange), which loses homology and hits an early stop. '
            'The proposed reading (blue) consumes C-GGA as one Gly and continues in +1. The sequence is TIGR02386 (RNA polymerase β′) from CAG-508.')]
 st += [P('2. Specific claims', 'h'),
@@ -75,6 +79,8 @@ st += [fig(F + 'fig1_frame_test.png', 15.5, '<b>Figure 2.</b> (A) Genome-level f
            '(CAG-508\'s own GGN third-position usage is A 59%, U 32%).'),
        fig(F + 'fig2_alignment.png', 15.5, '<b>Figure 3.</b> Two of the most widely shared shift sites. The extra C (bracketed) sits immediately before GGA; reading +1 restores the conserved sequence.')]
 st += [P('3. Novelty: how it was checked', 'h')] + bullets([
+    '<b>Missed prior report.</b> After this work was finished, the user found the 16 Nov 2026 X post by @small_LM that reports the core finding. The checks below '
+    'did not include social media. The core claim is therefore NOT novel; only the additions listed at the top may be.',
     '<b>Literature</b> (Exa web search through Nov 2026). Genetic-code screens: Shulgina & Eddy 2021; Fakih 2026; Melnykov 2026; Kim 2026 bioRxiv; gTranslate and Parks 2026; Kivenson 2025 (Pyl code). '
     'Frameshift and quadruplet decoding: DeBenedictis 2022 notes the "absence of naturally occurring quadruplet codon codes"; Euplotes; Perkinsus mitochondria; SufB2/SufD; FSscan 2009; Antonov 2013. '
     'TANB77: Kim et al. 2024. None reports CGG-triggered or clade-wide frameshifting in TANB77 or in any bacterium.',
@@ -82,8 +88,8 @@ st += [P('3. Novelty: how it was checked', 'h')] + bullets([
     'Melnykov\'s full KACI table (3.1M assemblies, Zenodo 20837797): 863 CAG-508 assemblies have CGG=G, which is 98.6% of all GTDB-mapped CGG→Gly calls. These were automated and never described; his paper defers '
     'Clostridial CGG decoding to "a separate investigation". We show the signal is a frameshift shadow.',
     '<b>Precedents that narrow the claim.</b> Isolated +1 shifts at rare or uncharged codons are known: E. coli CGG-C/AGG-AGG sites (Spanjaard & van Duin 1988; FSscan), recoded E. coli (Ma 2018), '
-    'and yeast near-cognate codons (Sundararajan 1999). Eukaryotic organelle and ciliate frameshift codes are known (Perkinsus, Euplotes). Our novelty is a clade-wide, conserved, tRNA-linked frameshift code in bacteria.',
-    'Two independent adversarial-review agents searched for prior art and found none.'])
+    'and yeast near-cognate codons (Sundararajan 1999). Eukaryotic organelle and ciliate frameshift codes are known (Perkinsus, Euplotes). The clade-wide TANB77 code itself was first reported by @small_LM (16 Nov 2026).',
+    'Two independent adversarial-review agents searched the literature for prior art and found none; neither searched social media.'])
 st += [fig(F + 'fig5_longread_trna.png', 15.5, '<b>Figure 4.</b> (A) Replication in 23 complete CAG-508 genomes (PacBio HiFi, Nanopore hybrid, Illumina; 6 BioProjects). '
            'CGG gene-tail sites continue in +1 far more often than control AGG/GGG sites. (B) TANB77 lineages that lost the CGG-reading tRNA carry a tRNA<super>Gly</super>(UCC) G37 variant; '
            'outgroups have the reader and no variant (MAG tRNA recovery is incomplete; complete genomes: 23/23 variant, 0/23 reader).')]
